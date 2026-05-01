@@ -245,7 +245,7 @@ def make_bidirectional_cycle(n):
 #  SECTION 7: Run experiments
 # ─────────────────────────────────────────────
 
-def run_path_experiment(max_n=12):
+def run_path_experiment(max_n=14):
     """
     Compute th_rzf(P_n) for n = 2 to max_n.
     Also records the optimal set size and EPT separately.
@@ -351,7 +351,7 @@ if __name__ == "__main__":
 
     # Paths up to n=12, cycles up to n=12
     # Increase carefully — cost is O(2^n) so n=14 is the practical limit
-    MAX_N = 12
+    MAX_N = 20
 
     df_path  = run_path_experiment(max_n=MAX_N)
     df_cycle = run_cycle_experiment(max_n=MAX_N)
